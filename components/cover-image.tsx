@@ -4,7 +4,7 @@ import Link from "next/link";
 
 interface Props {
   title: string;
-  coverImage: {
+  coverImage?: {
     node: {
       sourceUrl: string;
     };
@@ -18,7 +18,7 @@ const CoverImage = ({ title, coverImage, slug }: Props) => {
       width={2000}
       height={1000}
       alt={`Cover Image for ${title}`}
-      src={coverImage?.node.sourceUrl}
+      src={coverImage?.node.sourceUrl || ""}
       className={cn("shadow-small", {
         "hover:shadow-medium trasition-shadow duration-200": slug,
       })}

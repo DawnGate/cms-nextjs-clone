@@ -1,4 +1,5 @@
 import Author from "./author";
+import Category from "./categories";
 
 export default interface Post {
   title: string;
@@ -11,4 +12,5 @@ export default interface Post {
   excerpt: string;
   author: Author;
   slug: string;
+  categories: Category[];
 }
