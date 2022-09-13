@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Meta from "./meta";
 import Alert from "./alert";
+import Footer from "./footer";
 
 const Layout = ({
   preview,
@@ -16,6 +17,7 @@ const Layout = ({
         <Alert preview={preview} />
         <main>{children}</main>
       </div>
+      <Footer />
     </>
   );
 };
