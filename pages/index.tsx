@@ -4,9 +4,11 @@ import Container from "../components/container";
 import HeroPost from "../components/hero-post";
 import Intro from "../components/intro";
 import Layout from "../components/layout";
-import posts from "../data/data";
+import MoreStories from "../components/more-stories";
 import { CMS_NAME } from "../lib/constants";
 import Post from "../models/post";
+
+import { index } from "../data/data";
 
 interface HomeProps {
   preview: boolean;
@@ -23,20 +25,19 @@ const Home = (props: HomeProps) => {
       <Container>
         <Intro />
         {props.heroPost && <HeroPost {...props.heroPost} />}
+        {props.morePosts.length > 0 && <MoreStories posts={props.morePosts} />}
       </Container>
     </Layout>
   );
 };
 
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
-  const morePosts: Post[] = posts.pageProps.posts.edges.map((item) => ({
+  const posts: Post[] = index.pageProps.allPosts.edges.map((item) => ({
     ...item.node,
     coverImage: item.node.featuredImage,
   }));
-  const heroPost: Post = {
-    ...posts.pageProps.post,
-    coverImage: posts.pageProps.post.featuredImage,
-  };
+  const morePosts: Post[] = posts.slice(1);
+  const heroPost: Post = posts[0];
   return {
     props: { preview: false, morePosts, heroPost },
   };

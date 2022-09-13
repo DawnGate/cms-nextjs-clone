@@ -51,7 +51,7 @@ const posts = {
             featuredImage: {
               node: {
                 sourceUrl:
-                  "https://vercelsolutions.com/wp-content/uploads/2022/06/hamman-mohamed-C69xTC5q_pE-unsplash-scaled.jpg",
+                  "https://triprow.com/wp-content/uploads/2014/06/fuji-e1403964208921.jpg",
               },
             },
             author: {
@@ -88,7 +88,7 @@ const posts = {
             featuredImage: {
               node: {
                 sourceUrl:
-                  "https://vercelsolutions.com/wp-content/uploads/2022/06/hamman-mohamed-C69xTC5q_pE-unsplash-scaled.jpg",
+                  "https://triprow.com/wp-content/uploads/2014/06/fuji-e1403964208921.jpg",
               },
             },
             author: {
@@ -117,6 +117,93 @@ const posts = {
         },
       ],
     },
+  },
+  __N_SSG: true,
+};
+
+export const index = {
+  pageProps: {
+    allPosts: {
+      edges: [
+        {
+          node: {
+            title: "From Server-side Rendering to Static Generation",
+            excerpt:
+              "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid dubitas igitur mutare principia naturae? Ita multo sanguine profuso in laetitia et in victoria est mortuus. Omnia contraria, quos etiam insanos esse vultis. Hinc ceteri particulas arripere conati suam quisque videro voluit afferre sententiam. Quis non odit sordidos, vanos, leves, futtiles? Quasi ego id curem, quid ille aiat aut neget.</p>\n",
+            slug: "second-entry",
+            date: "2022-06-02T11:21:06",
+            featuredImage: {
+              node: {
+                sourceUrl:
+                  "https://vercelsolutions.com/wp-content/uploads/2022/06/claudio-schwarz-ZuT6efbmt8U-unsplash-scaled.jpg",
+              },
+            },
+            author: {
+              node: {
+                name: "user",
+                firstName: "UserName",
+                lastName: "LastName",
+                avatar: {
+                  url: "https://secure.gravatar.com/avatar/b58996c504c5638798eb6b511e6f49af?s=96&d=mm&r=g",
+                },
+              },
+            },
+          },
+        },
+        {
+          node: {
+            title:
+              "Learn How to Pre-render Pages Using Static Generation with Next.js",
+            excerpt:
+              "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit hoc ultimum bonorum, quod nunc a me defenditur; Vitae autem degendae ratio maxime quidem illis placuit quieta. Duo Reges: constructio interrete. Nam quid possumus facere melius?</p>\n",
+            slug: "another-entry",
+            date: "2022-06-02T11:19:47",
+            featuredImage: {
+              node: {
+                sourceUrl:
+                  "https://vercelsolutions.com/wp-content/uploads/2022/06/hamman-mohamed-C69xTC5q_pE-unsplash-scaled.jpg",
+              },
+            },
+            author: {
+              node: {
+                name: "user",
+                firstName: "UserName",
+                lastName: "LastName",
+                avatar: {
+                  url: "https://secure.gravatar.com/avatar/b58996c504c5638798eb6b511e6f49af?s=96&d=mm&r=g",
+                },
+              },
+            },
+          },
+        },
+        {
+          node: {
+            title: "Deploying Next.js Apps",
+            excerpt:
+              "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit hoc ultimum bonorum, quod nunc a me defenditur; Vitae autem degendae ratio maxime quidem illis placuit quieta. Duo Reges: constructio interrete. Nam quid possumus facere melius?</p>\n",
+            slug: "hello-world",
+            date: "2022-06-02T10:57:10",
+            featuredImage: {
+              node: {
+                sourceUrl:
+                  "https://vercelsolutions.com/wp-content/uploads/2022/06/hamman-mohamed-C69xTC5q_pE-unsplash-scaled.jpg",
+              },
+            },
+            author: {
+              node: {
+                name: "user",
+                firstName: "UserName",
+                lastName: "LastName",
+                avatar: {
+                  url: "https://secure.gravatar.com/avatar/b58996c504c5638798eb6b511e6f49af?s=96&d=mm&r=g",
+                },
+              },
+            },
+          },
+        },
+      ],
+    },
+    preview: false,
   },
   __N_SSG: true,
 };
