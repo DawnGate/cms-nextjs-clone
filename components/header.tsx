@@ -10,3 +10,5 @@ const Header = () => {
     </h2>
   );
 };
+
+export default Header;

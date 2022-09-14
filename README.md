@@ -7,3 +7,5 @@ output: simple blog.
 
 source:
 https://github.com/vercel/next.js/tree/canary/examples/cms-wordpress/pages
+
+finisth in 14/9/2022

@@ -12,5 +12,7 @@ export default interface Post {
   excerpt: string;
   author: Author;
   slug: string;
-  categories: Category[];
+  categories?: Category[];
+  content?: string;
+  tags?: Category[];
 }
